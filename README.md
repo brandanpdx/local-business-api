@@ -6,11 +6,17 @@
 
 This is the Epicodus independent end-of-week assignment for Friday, April 3, 2020.  
 
-## Behavior Driven Development Specifications
-
-| Specification             | Input 	|     Output      |
-|-------------------------	|-------	|----------------	|
-
+## User stories
+* User is able to get the list of all businesses in the databse
+* User is able to view a specific business using the business id
+* User is able to filter their search using parameters of:
+  * BusinessName
+  * BusinessType
+  * Opening Hour
+  * Closing Hour
+* User is able to post a new business in the database
+* User is able to edit an existing business in the database using the BusinessId 
+* User is able to delete an existing business in the database
 
 
 ## Setup/Installation Requirements
@@ -33,6 +39,10 @@ Then update your MySQL database by typing:
 You can now run the program by typing:
 * ```$ dotnet run```
 
+## API Documentation
+
+This project was built using a custom API.  To view the detailed routes of the API, please visit: https://app.swaggerhub.com/apis-docs/brandanpdx/my-title/1.0.0#/
+
 
 ## Support and Contact
 
@@ -45,10 +55,9 @@ This program was created with:
 * C#
 * ASP.NET Core MVC 2.2
 * Entity Framework
-* Identity 
+* NSwag  
 * MySQL
 * MySQL Workbench 
-* HTML5
 
 ## License
 
