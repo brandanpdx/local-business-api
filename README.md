@@ -18,14 +18,14 @@ This is the Epicodus independent end-of-week assignment for Friday, April 3, 202
 * User is able to edit an existing business in the database using the BusinessId 
 * User is able to delete an existing business in the database
 
-## API Endpoints and Documentation
+## API Endpoints and Further Exploration Documentation using Swagger
 * GET /api/Businesses
 * POST /api/Businesses
 * GET /api/Businesses/{BusinessId}
 * PUT /api/Businesses/{BusinessId}
 * DELETE /api/Businesses/{BusinessId}
 
-To view the additional details of the API endpoints, please visit: https://app.swaggerhub.com/apis-docs/brandanpdx/my-title/1.0.0#/
+To view the additional details of the API endpoints, please visit the API's SwaggerHub site: https://app.swaggerhub.com/apis-docs/brandanpdx/my-title/1.0.0#/
 
 ## Setup/Installation Requirements
 
