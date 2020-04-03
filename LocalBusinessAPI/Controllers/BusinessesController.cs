@@ -19,9 +19,17 @@ namespace LocalBusinessAPI.Controllers
 
     // GET api/businesses
     [HttpGet]
-    public ActionResult<IEnumerable<Business>> Get()
+    [HttpGet]
+    public ActionResult<IEnumerable<Business>> Get(string businessname)
     {
-      return _db.Businesses.ToList();
+      var query = _db.Businesses.AsQueryable();
+
+      if (businessname != null)
+      {
+        query = query.Where(entry => entry.BusinessName == businessname);
+      }
+
+      return query.ToList();
     }
 
     // POST api/businesses
