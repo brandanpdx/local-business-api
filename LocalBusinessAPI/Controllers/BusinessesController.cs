@@ -47,5 +47,14 @@ namespace LocalBusinessAPI.Controllers
       _db.Entry(business).State = EntityState.Modified;
       _db.SaveChanges();
     }
+
+    // DELETE api/businesses/2
+    [HttpDelete("{id}")]
+    public void Delete(int id)
+    {
+      var businessToDelete = _db.Businesses.FirstOrDefault(entry => entry.BusinessId == id);
+      _db.Businesses.Remove(businessToDelete);
+      _db.SaveChanges();
+    }
   }
 }
