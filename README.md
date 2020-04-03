@@ -44,7 +44,7 @@ Then restore dependencies by typing:
 Then update your MySQL database by typing: 
 * ```$ dotnef ef database update```
 
-You can now run the program by typing:
+You can now run the API (e.g. via Postman) by typing:
 * ```$ dotnet run```
 
 ## Support and Contact
