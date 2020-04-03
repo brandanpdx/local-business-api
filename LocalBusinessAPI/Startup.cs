@@ -27,7 +27,8 @@ namespace LocalBusinessAPI
 
       // Register the Swagger services
       services.AddSwaggerDocument();
-
+      
+      // API Versioning 
       services.AddApiVersioning(o =>
       {
         o.ReportApiVersions = true;
