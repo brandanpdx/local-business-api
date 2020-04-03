@@ -18,7 +18,7 @@ This is the Epicodus independent end-of-week assignment for Friday, April 3, 202
 * User is able to edit an existing business in the database using the BusinessId 
 * User is able to delete an existing business in the database
 
-## API Endpoints and Further Exploration Documentation using Swagger
+## API Endpoints and Documentation using Swagger
 * GET /api/Businesses
 * POST /api/Businesses
 * GET /api/Businesses/{BusinessId}
@@ -26,6 +26,10 @@ This is the Epicodus independent end-of-week assignment for Friday, April 3, 202
 * DELETE /api/Businesses/{BusinessId}
 
 To view the additional details of the API endpoints, please visit the API's SwaggerHub site: https://app.swaggerhub.com/apis-docs/brandanpdx/my-title/1.0.0#/
+
+## API Versioning
+
+The current version of this API is version 1.0.  This API uses ASP.NET Core Versioning 3.1.6 for API version tracking. 
 
 ## Setup/Installation Requirements
 
