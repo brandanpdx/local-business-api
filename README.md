@@ -18,6 +18,14 @@ This is the Epicodus independent end-of-week assignment for Friday, April 3, 202
 * User is able to edit an existing business in the database using the BusinessId 
 * User is able to delete an existing business in the database
 
+## API Endpoints and Documentation
+* GET /api/Businesses
+* POST /api/Businesses
+* GET /api/Businesses/{BusinessId}
+* PUT /api/Businesses/{BusinessId}
+* DELETE /api/Businesses/{BusinessId}
+
+To view the additional details of the API endpoints, please visit: https://app.swaggerhub.com/apis-docs/brandanpdx/my-title/1.0.0#/
 
 ## Setup/Installation Requirements
 
@@ -38,11 +46,6 @@ Then update your MySQL database by typing:
 
 You can now run the program by typing:
 * ```$ dotnet run```
-
-## API Documentation
-
-This project was built using a custom API.  To view the detailed routes of the API, please visit: https://app.swaggerhub.com/apis-docs/brandanpdx/my-title/1.0.0#/
-
 
 ## Support and Contact
 
