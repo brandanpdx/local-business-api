@@ -4,7 +4,7 @@
 
 ## Description
 
-This is the Epicodus independent end-of-week assignment for Friday, April 3, 2020.  
+This is the Epicodus independent end-of-week assignment for Friday, April 3, 2020.  The purpose of this assignment is to create an API for a local business lookup. The API will list restaurants and shops in town.  The API will list the business name, business type, business address, opening time, and closing time. 
 
 ## User stories
 * User is able to get the list of all businesses in the databse
