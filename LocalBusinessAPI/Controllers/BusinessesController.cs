@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using LocalBusinessAPI.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace LocalBusinessAPI.Controllers
 {
@@ -36,6 +37,15 @@ namespace LocalBusinessAPI.Controllers
     public ActionResult<Business> Get(int id)
     {
       return _db.Businesses.FirstOrDefault(entry => entry.BusinessId == id);
+    }
+
+    // PUT api/businesses/2
+    [HttpPut("{id}")]
+    public void Put(int id, [FromBody] Business business)
+    {
+      business.BusinessId = id;
+      _db.Entry(business).State = EntityState.Modified;
+      _db.SaveChanges();
     }
   }
 }
