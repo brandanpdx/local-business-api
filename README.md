@@ -59,6 +59,7 @@ This program was created with:
 * ASP.NET Core MVC 2.2
 * Entity Framework
 * NSwag  
+* Microsoft.AspNetCore.Mvc.Versioning 3.1.6
 * MySQL
 * MySQL Workbench 
 
