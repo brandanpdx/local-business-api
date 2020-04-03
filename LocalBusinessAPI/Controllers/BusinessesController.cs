@@ -20,13 +20,28 @@ namespace LocalBusinessAPI.Controllers
     // GET api/businesses
     [HttpGet]
     [HttpGet]
-    public ActionResult<IEnumerable<Business>> Get(string businessname)
+    public ActionResult<IEnumerable<Business>> Get(string businessname, string businesstype, string openinghour, string closinghour)
     {
       var query = _db.Businesses.AsQueryable();
 
       if (businessname != null)
       {
         query = query.Where(entry => entry.BusinessName == businessname);
+      }
+
+      if (businesstype != null)
+      {
+        query = query.Where(entry => entry.BusinessType == businesstype);
+      }
+
+      if (openinghour != null)
+      {
+        query = query.Where(entry => entry.OpeningHour == openinghour);
+      }
+
+      if (closinghour != null)
+      {
+        query = query.Where(entry => entry.ClosingHour == closinghour);
       }
 
       return query.ToList();
